@@ -1,7 +1,8 @@
 
 import 'package:bus_seat_selection/configs/routes/routes_name.dart';
-import 'package:bus_seat_selection/view/home.dart';
 import 'package:flutter/material.dart';
+
+import '../../presentation/home_view/home.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
