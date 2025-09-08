@@ -13,12 +13,14 @@ class SeatWidget extends StatelessWidget {
       margin: EdgeInsets.all(6),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(6,),
         color: theme.colorScheme.outline.withOpacity(.4),
       ),
       child: Text(
         name,
         style: theme.textTheme.bodySmall?.copyWith(
           color: theme.colorScheme.onPrimary,
+          
         ),
       ),
     );
