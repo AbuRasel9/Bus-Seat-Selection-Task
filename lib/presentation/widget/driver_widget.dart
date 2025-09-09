@@ -9,8 +9,8 @@ class DriverWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme=context.theme;
     return Container(
-      width: 50,
-      height: 50,
+      width: 40,
+      height: 40,
       margin: EdgeInsets.only(right: 15,),
       alignment: Alignment.center,
       decoration: BoxDecoration(

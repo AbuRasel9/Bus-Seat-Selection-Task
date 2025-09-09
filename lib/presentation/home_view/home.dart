@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:bus_seat_selection/utils/extensions/context_ext.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bus_seat_selection/bloc/busSeatBloc/bus_seat_bloc.dart';
@@ -56,7 +57,9 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     final theme=context.theme;
     return Scaffold(
+
       appBar: AppBar(
+        backgroundColor: theme.scaffoldBackgroundColor,
         title:  Text("Home Screen",style: theme.textTheme.bodyMedium?.copyWith(/*color: theme.colorScheme.*/),),
         actions: [
           ApiToggle(

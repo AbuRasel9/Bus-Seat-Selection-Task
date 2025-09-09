@@ -136,8 +136,8 @@ class AppThemeData {
     textTheme: AppTextThemes.darkTextTheme,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     appBarTheme: AppBarTheme(
-      backgroundColor: AppColorSchemes.darkColorScheme.primary,
-      foregroundColor: AppColorSchemes.darkColorScheme.onPrimary,
+      backgroundColor: CupertinoColors.systemGrey6,
+      foregroundColor: CupertinoColors.systemGrey6,
       elevation: 0,
       titleTextStyle: AppTextThemes.darkTextTheme.titleLarge
           ?.copyWith(/*color: AppColorSchemes.lightColorScheme.onPrimary*/),

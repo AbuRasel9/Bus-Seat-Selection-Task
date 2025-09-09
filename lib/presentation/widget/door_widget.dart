@@ -8,8 +8,8 @@ class DoorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = context.theme;
     return Container(
-      height: 50,
-      width: 50,
+      height: 40,
+      width: 40,
       margin: EdgeInsets.only(right: 17,),
 
       alignment: Alignment.center,
