@@ -10,9 +10,11 @@ class Metadata {
   });
 
   factory Metadata.fromJson(Map<String, dynamic> json) => Metadata(
-    id: json["id"],
-    private: json["private"],
-    createdAt: json["createdAt"] == null ? null : DateTime.parse(json["createdAt"]),
+    id: json["id"]?.toString(),
+    private: json["private"] ?? false,
+    createdAt: json["createdAt"] == null
+        ? null
+        : DateTime.tryParse(json["createdAt"]),
   );
 
   Map<String, dynamic> toJson() => {

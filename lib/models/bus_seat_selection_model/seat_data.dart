@@ -6,8 +6,8 @@ class SeatData {
 
   factory SeatData.fromJson(Map<String, dynamic> json) {
     return SeatData(
-      type: json['type'] ?? 'space',
-      name: json['name'],
+      type: json['type'] ?? "space",
+      name: json['name']?.toString(), // <-- safe cast
     );
   }
 

@@ -1,22 +1,17 @@
-import 'package:bus_seat_selection/models/bus_seat_selection_model/seat_data.dart';
-
 class Record {
-  List<SeatData>? data;
+  List<dynamic> data;
 
-  Record({
-    this.data,
-  });
+  Record({required this.data});
 
-  factory Record.fromJson(Map<String, dynamic> json) => Record(
-    data: json["data"] == null
-        ? []
-        : List<SeatData>.from(json["data"]!.map((x) => SeatData.fromJson(x))),
-  );
+  factory Record.fromJson(Map<String, dynamic> json) {
+    final rawData = json["data"];
+    if (rawData is List) {
+      return Record(data: rawData);
+    }
+    return Record(data: []);
+  }
 
   Map<String, dynamic> toJson() => {
-    "data": data == null
-        ? []
-        : List<dynamic>.from(data!.map((x) => x.toJson())),
+    "data": data,
   };
 }
-

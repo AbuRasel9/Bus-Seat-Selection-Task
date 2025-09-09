@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 enum Status { initial, loading, success, error }
 
 class BusSeatState extends Equatable {
-  final List<SeatData> seatItemList;
+  final List<dynamic> seatItemList;
   final Status status;
   final String message;
 
@@ -16,7 +16,7 @@ class BusSeatState extends Equatable {
   });
 
   BusSeatState copyWith({
-    List<SeatData>? seatItemList,
+    List<dynamic>? seatItemList,
     Status? status,
     String? message,
   }) {

@@ -10,6 +10,7 @@ class SeatWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = context.theme;
     return Container(
+      alignment: Alignment.topLeft,
       margin: EdgeInsets.all(6),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(

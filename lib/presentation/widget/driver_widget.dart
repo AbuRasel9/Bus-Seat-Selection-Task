@@ -17,7 +17,7 @@ class DriverWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(6),
       ),
       child: Image.asset(
-        "assets/images/bus_door_icon.png",
+        "assets/images/steering-wheel.png",
         height: 20,
         width: 20,
         fit: BoxFit.cover,
