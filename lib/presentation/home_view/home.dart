@@ -52,8 +52,6 @@ class _HomeViewState extends State<HomeView> {
   }
 
 
-
-
   @override
   Widget build(BuildContext context) {
     final theme=context.theme;
