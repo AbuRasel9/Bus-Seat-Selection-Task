@@ -14,7 +14,7 @@ class DriverWidget extends StatelessWidget {
       margin: EdgeInsets.only(right: 15,),
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        color: theme.colorScheme.outline.withOpacity(.4),
+        color: theme.colorScheme.outline,
         borderRadius: BorderRadius.circular(6),
       ),
       child: Image.asset(

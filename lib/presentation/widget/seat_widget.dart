@@ -17,7 +17,7 @@ class SeatWidget extends StatelessWidget {
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
-        color: theme.colorScheme.outline.withOpacity(.4),
+        color: theme.colorScheme.outline,
       ),
       child: Text(
         name,

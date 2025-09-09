@@ -86,8 +86,8 @@ class _HomeViewState extends State<HomeView> {
             } else if (state.status == Status.success) {
               return SeatGrid(
                 rows: state.seatItemList,
-                buildItem: (item) => buildItem(item), // your seat widget
-                seatSpacing: 30.0, // optional
+                buildItem: (item) => buildItem(item),
+                seatSpacing: 30.0,
               );
             } else if (state.status == Status.error) {
               return Center(
