@@ -23,7 +23,7 @@ class AppThemeData {
     textTheme: AppTextThemes.lightTextTheme,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     appBarTheme: AppBarTheme(
-      backgroundColor: AppColorSchemes.lightColorScheme.primary,
+      backgroundColor: AppColorSchemes.lightColorScheme.onPrimary,
       foregroundColor: AppColorSchemes.lightColorScheme.onPrimary,
       elevation: 0,
       titleTextStyle: AppTextThemes.lightTextTheme.titleLarge
@@ -140,7 +140,7 @@ class AppThemeData {
       foregroundColor: AppColorSchemes.darkColorScheme.onPrimary,
       elevation: 0,
       titleTextStyle: AppTextThemes.darkTextTheme.titleLarge
-          ?.copyWith(color: AppColorSchemes.lightColorScheme.onPrimary),
+          ?.copyWith(/*color: AppColorSchemes.lightColorScheme.onPrimary*/),
       shape: const LinearBorder(),
       iconTheme: IconThemeData(
         color: AppColorSchemes.darkColorScheme.onPrimary,
