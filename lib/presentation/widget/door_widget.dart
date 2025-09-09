@@ -8,8 +8,10 @@ class DoorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = context.theme;
     return Container(
-      width: 50,
       height: 50,
+      width: 50,
+      margin: EdgeInsets.only(right: 17,),
+
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: theme.colorScheme.outline.withOpacity(.4),
@@ -19,7 +21,7 @@ class DoorWidget extends StatelessWidget {
         "assets/images/bus_door_icon.png",
         height: 20,
         width: 20,
-        fit: BoxFit.cover,
+        fit: BoxFit.fill,
         color: theme.colorScheme.onPrimary,
       ),
     );
