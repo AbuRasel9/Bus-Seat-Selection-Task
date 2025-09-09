@@ -13,7 +13,7 @@ class SeatWidget extends StatelessWidget {
       height: 50,
       width: 50,
       alignment: Alignment.center,
-      margin: EdgeInsets.only(right: 10, bottom: 10,top: 10),
+      margin: EdgeInsets.only(right: 15, bottom: 10,top: 10),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
