@@ -59,7 +59,7 @@ class _HomeViewState extends State<HomeView> {
     final theme=context.theme;
     return Scaffold(
       appBar: AppBar(
-        title:  Text("Bus Seat Layout",style: theme.textTheme.bodyMedium?.copyWith(/*color: theme.colorScheme.*/),),
+        title:  Text("Home Screen",style: theme.textTheme.bodyMedium?.copyWith(/*color: theme.colorScheme.*/),),
         actions: [
           ApiToggle(
           useApi1: useApi1,
